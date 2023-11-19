@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/styleOutput.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <script type="module" src="./script/main.js" defer="defer"></script>
+        <title>DOM Project</title>
+    </head>
+    <body class=" overflow-hidden">
+        <!-- container -->
+        <div class="  grid grid-cols-1 md:grid-cols-3 gap-4 p-4 first-letter:">
+            <!-- cols 1 -->
+            <div class="col-span-3 md:col-span-2">
+                <!-- header -->
+                <div
+                    class=" py-4 px-2 font-bold flex justify-between items-center border-b-2 border-zinc-950">
+                    <h1 class=" text-lg md:text-2xl uppercase">
+                        Shopping cart
+                    </h1>
+                    <h2 class=" font-light">
+                        <span id="nItems">3</span>
+                        items
+                    </h2>
+                </div>
+                <!-- list items -->
+                <div class=" grid auto-rows-fr">
+                    <!-- item -->
+                    <div
+                        class=" grid grid-cols-6 p-4 justify-center items-center gap-4 border-b-2 border-zinc-600 "
+                        id="item-0">
+                        <!-- button like-0 -->
+                        <div class="justify-self-center p-1 cursor-pointer ">
+                            <i class="fa-regular fa-heart text-2xl" id="like-0"></i>
+                        </div>
+                        <!-- Informations sur le produit -->
+                        <div class=" max-h-80 max-w-80 ">
+                            <img
+                                src="./res/crayon.jpeg"
+                                alt="item image"
+                                class=" shadow-custom border-1 border-zinc-400">
+                        </div>
+                        <div class="justify-self-center">
+                            <p class="text-sm">
+                                <span id="price-0">1000</span>
+                                Francs CFA
+                            </p>
+                            <p class="font-bold text-sm ">Colored pencil box</p>
+                        </div>
+                        <!-- Quantité -->
+                        <div class="justify-self-center cursor-pointer " id="display-quantity-0">
+                            <i class="fa-solid fa-minus text-2xl removeProduct" ></i>
+                            <input type="text" name="" class=" w-8 quantity-0 " value="1">
+                            <i class="fa-solid fa-plus text-2xl addProduct"></i>
+                        </div>
+                        <!-- Sous-total -->
+                        <div class="justify-self-center ">
+                            <p class="font-bold mb-2">
+                                <span id="subTotal-0">1000</span>
+                                Francs CFA
+                            </p>
+                        </div>
+                        <!-- button remove -->
+                        <div class="justify-self-center p-1 cursor-pointer">
+                            <i class="fa-solid fa-xmark text-2xl" id="remove-0"></i>
+                        </div>
+                    </div>
+                    <!-- end of item -->
+                    <!-- item 1 -->
+                    <div
+                        class="grid grid-cols-6 p-4 justify-center items-center gap-4 border-b-2 border-zinc-600"
+                        id="item-1">
+                        <!-- button like-1 -->
+                        <div class="justify-self-center p-1 cursor-pointer">
+                            <i class="fa-regular fa-heart text-2xl" id="like-1"></i>
+                        </div>
+                        <!-- Informations sur le produit -->
+                        <div class="max-h-80 max-w-80">
+                            <img
+                                src="./res/matgeo.jpeg"
+                                alt="item image"
+                                class="shadow-custom border-1 border-zinc-400">
+                        </div>
+                        <div class="justify-self-center">
+                            <p class="text-sm">
+                                <span id="price-1">1200</span>
+                                Francs CFA
+                            </p>
+                            <p class="font-bold text-sm">Geometric material pack</p>
+                        </div>
+                        <!-- Quantité -->
+                        <div class="justify-self-center cursor-pointer" id="display-quantity-1">
+                            <i class="fa-solid fa-minus text-2xl removeProduct" ></i>
+                            <input type="text" name="" class="w-8 quantity-1" value="1">
+                            <i class="fa-solid fa-plus text-2xl addProduct"></i>
+                        </div>
+                        <!-- Sous-total -->
+                        <div class="justify-self-center ">
+                            <p class="font-bold mb-2">
+                                <span id="subTotal-1">1200</span>
+                                Francs CFA
+                            </p>
+                        </div>
+                        <!-- button remove -->
+                        <div class="justify-self-center p-1 cursor-pointer">
+                            <i class="fa-solid fa-xmark text-2xl" id="remove-1"></i>
+                        </div>
+                    </div>
+					<!-- end of item -->
+                    <!-- item 2 -->
+                    <div
+                        class="grid grid-cols-6 p-4 justify-center items-center gap-4 border-b-2 border-zinc-600"
+                        id="item-2">
+                        <!-- button like-2 -->
+                        <div class="justify-self-center p-1 cursor-pointer">
+                            <i class="fa-regular fa-heart text-2xl" id="like-2"></i>
+                        </div>
+                        <!-- Informations sur le produit -->
+                        <div class="max-h-80 max-w-80">
+                            <img
+                                src="./res/trousseau.jpeg"
+                                alt="item image"
+                                class="shadow-custom border-1 border-zinc-400">
+                        </div>
+                        <div class="justify-self-center">
+                            <p class="text-sm">
+                                <span id="price-2">800</span>
+                                Francs CFA
+                            </p>
+                            <p class="font-bold text-sm">school trousseau</p>
+                        </div>
+                        <!-- Quantité -->
+                        <div class="justify-self-center cursor-pointer" id="display-quantity-2">
+                            <i class="fa-solid fa-minus text-2xl removeProduct" ></i>
+                            <input type="text" name="" class="w-8 quantity-2" value="1">
+                            <i class="fa-solid fa-plus text-2xl addProduct"></i>
+                        </div>
+                        <!-- Sous-total -->
+                        <div class="justify-self-center ">
+                            <p class="font-bold mb-2">
+                                <span id="subTotal-2">800</span>
+                                Francs CFA
+                            </p>
+                        </div>
+                        <!-- button remove -->
+                        <div class="justify-self-center p-1 cursor-pointer">
+                            <i class="fa-solid fa-xmark text-2xl" id="remove-2"></i>
+                        </div>
+                    </div>
+					<!-- end of item -->
+                </div>
+            </div>
+            <!-- cols -2 -->
+            <div class=" w-full bg-gray-950 text-white col-span-1">
+                <div
+                    class=" py-4 px-2 font-bold flex justify-between items-center border-b-2 border-gray-100">
+                    <h1 class=" uppercase text-lg md:text-2xl">
+                        Payement info.
+                    </h1>
+                </div>
+                <div class=" px-4 py-2 flex flex-col space-y-4">
+                    <!-- Formulaire pour valider la commande -->
+                    <form action="" method="post" class=" space-y-10">
+                        <div >
+                            <div>
+                                <label for="adress" class="text-2xl font-semibold">
+                                    Name
+                                </label>
+                                <input
+                                    type="text"
+                                    name="adress"
+                                    id="adress"
+                                    required
+                                    class=" w-full bg-transparent  h-10 px-4 py-2 border-b-2 outline-0 border-zinc-100">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="adress" class="text-2xl font-semibold">
+                                    Cellphone
+                                </label>
+                                <input
+                                    type="text"
+                                    name="adress"
+                                    id="adress"
+                                    required
+                                    class=" w-full bg-transparent  h-10 px-4 py-2 border-b-2 outline-0 border-zinc-100">
+                            </div>
+                        </div>
+                        <div class="text-2xl font-semibold  ">
+                            <h2>Payment method</h2>
+                            <div class="flex justify-around">
+                                <!-- Ajoutez ces classes à votre balise select -->
+                            <select class="text-zinc-100 w-full my-2 bg-transparent border-b-2 border-zinc-100" id="" required>
+                                <option value="">choosing a payment method</option>
+                                <option value="">Wave</option>
+                                <option value="">Orange Money</option>
+                                <option value="">Free Money</option>
+                                <option value="">On delivery</option>
+                            </select>
+
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="adress" class="text-2xl font-semibold">
+                                    Delivery address
+                                </label>
+                                <input
+                                    type="text"
+                                    name="adress"
+                                    id="adress"
+                                    class=" w-full bg-transparent  h-10 px-4 py-2 border-b-2 outline-0 border-zinc-100">
+                            </div>
+                        </div>
+
+                        <div class="text-2xl font-semibold  ">
+                            TOTAL:
+                            <span id="total">4000</span>
+                            Francs CFA
+                            <h6 class=" text-lg font-light w-full text-center mt-4">
+                                *included: delivery costs 2000 CFA FRANCS.
+                            </h6>
+                        </div>
+                        <div class=" font-extrabold text-2xl  text-zinc-100">
+                            <button
+                                type="submit"
+                                class=" -tracking-tight w-full bg-blue-500 uppercase py-2 box-shadow--2">
+                                validate order
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- footer -->
+        </div>
+        <div class=" absolute bottom-0 left-0 w-screen p-4 bg-zinc-800 ">
+            <a href="http://" class="text-white">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to shop
+            </a>
+        </div>
+    </body>
+</html>
